@@ -17,7 +17,7 @@ NEWSPIDER_MODULE = 'crawl_wiki.spiders'
 #USER_AGENT = 'crawl_wiki (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 LOG_LEVEL = 'WARNING'
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32

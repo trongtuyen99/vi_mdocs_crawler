@@ -16,7 +16,8 @@ google_domains = ('https://www.google.',
                 'http://www.microsofttranslator.com',
                 'https://www.youtube.com',
                 'https://www.facebook.com',
-                'http://help.bing.')
+                'http://help.bing.',
+                'http://creativecommons.org')
 except_extends = ('.pdf', '.docx', '.ppt')
 
 class GoogleLinkSpider(scrapy.Spider):

@@ -17,6 +17,8 @@ google_domains = ('https://www.google.',
                 'https://www.youtube.com',
                 'https://www.facebook.com',
                 'http://help.bing.')
+except_extends = ('.pdf', '.docx', '.ppt')
+
 class GoogleLinkSpider(scrapy.Spider):
     name = "google_link"
 
@@ -39,7 +41,8 @@ class GoogleLinkSpider(scrapy.Spider):
             for para in html_parse.findAll('a', href=True):
                 try:
                     link = para.get('href')
-                    if link.startswith('http') and not link.startswith(google_domains) and 'wikipedia' not in link:
+                    if link.startswith('http') and not link.startswith(google_domains) and\
+                    'wikipedia' not in link and not link.endswith(except_extends):
                         all_links.add(link)
                     # if link.startswith('/url?q=https'):
                     #     source = link.split('/')[3]

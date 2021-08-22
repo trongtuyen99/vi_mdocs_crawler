@@ -2,7 +2,7 @@ import scrapy
 from bs4 import BeautifulSoup
 import urllib
 from scrapy.linkextractors import LinkExtractor
-custom_user_agent = "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0"
+custom_user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 Edg/91.0.864.59"
 google_domains = ('https://www.google.', 
                 'https://google.', 
                 'https://webcache.googleusercontent.', 
